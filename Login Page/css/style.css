@@ -1,0 +1,230 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: normal;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*----------------------------------------------*/
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+._container {
+  max-width: 358px;
+  margin: 0 auto;
+  box-sizing: content-box;
+}
+
+._button {
+  min-width: 250px;
+  font-size: 20px;
+  font-weight: 400;
+  height: 60px;
+  font-size: 20px;
+  line-height: normal;
+  color: #000;
+  border-radius: 40px;
+  display: flex;
+  min-height: 36px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0px 13px 0px 12px;
+  border-radius: 40px;
+  background: #FFF;
+  box-shadow: 0px 4px 16.6px 0px rgba(123, 123, 123, 0.25);
+}
+
+/*-----------------------HEADER----------------------------*/
+.header .header__container {
+  min-height: 250px;
+}
+.header .header__container .header__row {
+  border-radius: 40px;
+  background: linear-gradient(180deg, #FFD5EF 0%, rgba(255, 213, 239, 0) 77.8%);
+  min-height: 250px;
+  margin: 34px 0 0 0;
+  padding: 23px 16px 0 16px;
+}
+.header .header__container .header__row .row__top {
+  display: flex;
+  justify-content: space-between;
+}
+.header .header__container .header__row .row__top .header__logo a {
+  font-size: 20px;
+  font-weight: 700;
+  color: inherit;
+  text-transform: uppercase;
+}
+.header .header__container .header__row .row__top .header__logo span {
+  font-size: 20px;
+  font-weight: 400;
+}
+.header .header__container .header__row .row__top .header__icons {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.header .header__container .header__row .row__top .header__icons a:not(:last-child) {
+  margin: 0 16px 0 0;
+}
+.header .header__container .header__row .header__text {
+  padding: 41px 0 0 0;
+}
+.header .header__container .header__row .header__text p {
+  font-size: 26px;
+  font-weight: 400;
+}
+
+/*----------------MAIN---------------------------------*/
+.main {
+  padding: 0 0 10px 0;
+}
+.main .main__container .register__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .main__container .register__form .email__container {
+  display: flex;
+}
+.main .main__container .register__form .email__container .Email {
+  font-size: 18px;
+  margin: 50px 0 37px 0;
+  border-bottom: 2px solid #333;
+}
+.main .main__container .register__form .email__container .Email::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.38);
+}
+.main .main__container .register__form .email__container .Email::placeholder {
+  color: rgba(0, 0, 0, 0.38);
+}
+.main .main__container .register__form .email__container label {
+  font-size: 18px;
+  font-weight: 400;
+  padding: 50px 0 0 0;
+  margin: 0 58px 0 0;
+}
+.main .main__container .register__form .password__container .password {
+  font-size: 18px;
+  margin: 0 0 25px 0;
+  border-bottom: 2px solid #333;
+}
+.main .main__container .register__form .password__container .password::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.38);
+}
+.main .main__container .register__form .password__container .password::placeholder {
+  color: rgba(0, 0, 0, 0.38);
+}
+.main .main__container .register__form .password__container label {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 35px 0 0;
+}
+.main .main__container .register__form .Checkbox_container {
+  width: 100%;
+  max-width: 271px;
+  margin: 0 0 36px 0;
+}
+.main .main__container .register__form .Checkbox_container label {
+  color: #BCBCC0;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 0 0 32px;
+}
+.main .main__container .register__form .log__form {
+  display: flex;
+  flex-direction: column;
+  width: 358px;
+  padding: 0 16px;
+  border-radius: 40px;
+  margin: 0 5px 58px 5px;
+  border-radius: 40px;
+  box-shadow: 0px 4px 16px 0px rgba(123, 123, 123, 0.25);
+  background: #FFF;
+}
+.main .main__container .fogot__password {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 19px 0 0 0;
+}
+.main .main__container .fogot__password a {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(188, 188, 192, 0.8);
+  text-decoration: underline;
+}/*# sourceMappingURL=style.css.map */
