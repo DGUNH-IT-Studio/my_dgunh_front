@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Login</title>
+    <title>Register</title>
 </head>
 <body>
     <div class="wrapper">
@@ -26,7 +26,7 @@
                         </div>  
                     </div>
                     <div class="header__text">
-                        <p>С возвращением</p>
+                        <p>Создайте аккаунт</p>
                     </div>
                 </div>
             </div>
@@ -35,20 +35,15 @@
         <main class="main">
             <div class="main__container _container">
                 <form class="register__form" action="">
+                    <input class="Name" type="text" required placeholder="Имя">
+                    <input class="Surname" type="text" required placeholder="Фамилия">
                     <input type="email" class="Email" required placeholder="Электронная почта">
                     <input type="password" class="password" required placeholder="Пароль">
-                    <div class="Checkbox_container">
-                        <input id="checkbox" type="checkbox" class="checkbox">
-                        <label for="checkbox">Запомнить меня</label>
-                    </div>
-                    <button type="submit" class="_button">Войти</button>
+                    <input type="password" class="password" required placeholder="Подтвердите пароль">
+                    <button type="submit" class="_button">Зарегистрироваться</button>
                 </form>
-                <div class="fogot__password">
-                    <a href="">Забыли пароль?</a>
-                </div>
             </div>
         </main>
     </div>
-    
 </body>
 </html>

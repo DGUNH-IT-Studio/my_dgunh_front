@@ -64,7 +64,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     box-shadow: -5px -5px 13px 0px rgba(219, 187, 210, 0.90), 5px 5px 10px 0px rgba(255, 239, 255, 0.90), -5px 5px 10px 0px rgba(219, 187, 210, 0.20), 5px -5px 10px 0px rgba(219, 187, 210, 0.20), 1px 1px 2px 0px rgba(219, 187, 210, 0.50) inset, -1px -1px 2px 0px rgba(255, 239, 255, 0.30) inset;
 }
 
-/*-----------------------HEADER----------------------------*/
+/*-------------------Header--------------------------------------------------*/
 
 .header {
 
@@ -106,6 +106,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
                 p{
                     font-size: 26px;
                     font-weight: 400;
+                    letter-spacing: 3px;
                 }
             }
 
@@ -113,59 +114,50 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     }
 }
 
-/*----------------MAIN---------------------------------*/
+/*---------------------------Main----------------------------------------*/
+
 .main {
-    padding: 0 0 10px 0;
+    padding: 36px 0 0 0;
     .main__container {
-        .register__form{
+
+        .main__row {
             display: flex;
             flex-direction: column;
             align-items: center;
-            .Email {
-                padding: 85px 0 0 0;
-                font-size: 22px;
-                margin: 0 0 95px 0;
-                border-bottom: 2px solid #333;
-                &::placeholder{
-                    color: #7E7E82;
+            .main__student {
+                display: flex;
+                flex-direction: column;
+                margin: 0 0 40px 0;
+                a:first-child{
+                    box-shadow: 6px 6px 4px 0px rgba(0, 0, 0, 0.25) inset;
                 }
-            }
-    
-            .password {
-                font-size: 22px;
-                margin: 0 0 25px 0;
-                border-bottom: 2px solid #333;
-                &::placeholder{
-                    color: #7E7E82;
+
+                a:last-child{
+                    font-size: 24px;
+                    font-weight: 500;
+                    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
+                    text-align: center;
+                    color: inherit;
                 }
             }
 
-            .Checkbox_container{
-                width: 100%;
-                max-width: 271px;
-                margin: 0 0 150px 0;
-
-                label{
-                    color: #BCBCC0;
-                    font-size: 16px;
-                    font-weight: 400;
+            .main__teacher {
+                display: flex;
+                flex-direction: column;
+                a:first-child{
+                    
+                    box-shadow: 6px 6px 4px 0px rgba(0, 0, 0, 0.25) inset;
                 }
-            }
-    
-           
-        }
-
-        .fogot__password {
-            width: 100%;
-            display: flex;
-            justify-content: flex-end;
-            margin: 19px 0 0 0;
-            a{
-                font-size: 18px;
-                font-weight: 400;
-                color: #BCBCC0;
+                a:last-child{
+                    font-size: 24px;
+                    font-weight: 500;
+                    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
+                    text-align: center;
+                    color: inherit;
+                }
             }
         }
-        
     }
 }
+
+

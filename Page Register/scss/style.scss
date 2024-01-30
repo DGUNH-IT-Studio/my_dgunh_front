@@ -36,6 +36,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*----------------------------------------------*/
 .wrapper{
     width: 100%;
+
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -64,7 +65,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     box-shadow: -5px -5px 13px 0px rgba(219, 187, 210, 0.90), 5px 5px 10px 0px rgba(255, 239, 255, 0.90), -5px 5px 10px 0px rgba(219, 187, 210, 0.20), 5px -5px 10px 0px rgba(219, 187, 210, 0.20), 1px 1px 2px 0px rgba(219, 187, 210, 0.50) inset, -1px -1px 2px 0px rgba(255, 239, 255, 0.30) inset;
 }
 
-/*-----------------------HEADER----------------------------*/
+
+/*---------------------HEADER------------------------------------*/
 
 .header {
 
@@ -112,8 +114,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
         }
     }
 }
+/*-------------------------------Main---------------------------------------*/
 
-/*----------------MAIN---------------------------------*/
 .main {
     padding: 0 0 10px 0;
     .main__container {
@@ -121,51 +123,52 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
             display: flex;
             flex-direction: column;
             align-items: center;
-            .Email {
-                padding: 85px 0 0 0;
+            .Name {
+                font-size: 22px;
+                border-bottom: 2px solid #333;
+                margin: 0 0 95px 0;
+                padding: 30px 0 0 0;
+                &::placeholder{
+                    color: #BCBCC0;
+                }
+            }
+            .Surname {
                 font-size: 22px;
                 margin: 0 0 95px 0;
                 border-bottom: 2px solid #333;
                 &::placeholder{
-                    color: #7E7E82;
+                    color: #BCBCC0;
+                }
+            }
+            .Email {
+                font-size: 22px;
+                margin: 0 0 95px 0;
+                border-bottom: 2px solid #333;
+                &::placeholder{
+                    color: #BCBCC0;
                 }
             }
     
             .password {
                 font-size: 22px;
-                margin: 0 0 25px 0;
+                margin: 0 0 95px 0;
                 border-bottom: 2px solid #333;
                 &::placeholder{
-                    color: #7E7E82;
-                }
-            }
-
-            .Checkbox_container{
-                width: 100%;
-                max-width: 271px;
-                margin: 0 0 150px 0;
-
-                label{
                     color: #BCBCC0;
-                    font-size: 16px;
-                    font-weight: 400;
                 }
             }
     
            
         }
-
-        .fogot__password {
-            width: 100%;
-            display: flex;
-            justify-content: flex-end;
-            margin: 19px 0 0 0;
-            a{
-                font-size: 18px;
-                font-weight: 400;
-                color: #BCBCC0;
-            }
-        }
         
     }
 }
+
+
+
+
+
+
+
+
+

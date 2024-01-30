@@ -106,7 +106,7 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: -5px -5px 13px 0px rgba(219, 187, 210, 0.9), 5px 5px 10px 0px rgba(255, 239, 255, 0.9), -5px 5px 10px 0px rgba(219, 187, 210, 0.2), 5px -5px 10px 0px rgba(219, 187, 210, 0.2), 1px 1px 2px 0px rgba(219, 187, 210, 0.5) inset, -1px -1px 2px 0px rgba(255, 239, 255, 0.3) inset;
 }
 
-/*-----------------------HEADER----------------------------*/
+/*---------------------HEADER------------------------------------*/
 .header .header__container .header__row {
   border-radius: 40px;
   background: #FFD5EF;
@@ -141,7 +141,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-/*----------------MAIN---------------------------------*/
+/*-------------------------------Main---------------------------------------*/
 .main {
   padding: 0 0 10px 0;
 }
@@ -150,47 +150,48 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   align-items: center;
 }
+.main .main__container .register__form .Name {
+  font-size: 22px;
+  border-bottom: 2px solid #333;
+  margin: 0 0 95px 0;
+  padding: 30px 0 0 0;
+}
+.main .main__container .register__form .Name::-moz-placeholder {
+  color: #BCBCC0;
+}
+.main .main__container .register__form .Name::placeholder {
+  color: #BCBCC0;
+}
+.main .main__container .register__form .Surname {
+  font-size: 22px;
+  margin: 0 0 95px 0;
+  border-bottom: 2px solid #333;
+}
+.main .main__container .register__form .Surname::-moz-placeholder {
+  color: #BCBCC0;
+}
+.main .main__container .register__form .Surname::placeholder {
+  color: #BCBCC0;
+}
 .main .main__container .register__form .Email {
-  padding: 85px 0 0 0;
   font-size: 22px;
   margin: 0 0 95px 0;
   border-bottom: 2px solid #333;
 }
 .main .main__container .register__form .Email::-moz-placeholder {
-  color: #7E7E82;
+  color: #BCBCC0;
 }
 .main .main__container .register__form .Email::placeholder {
-  color: #7E7E82;
+  color: #BCBCC0;
 }
 .main .main__container .register__form .password {
   font-size: 22px;
-  margin: 0 0 25px 0;
+  margin: 0 0 95px 0;
   border-bottom: 2px solid #333;
 }
 .main .main__container .register__form .password::-moz-placeholder {
-  color: #7E7E82;
+  color: #BCBCC0;
 }
 .main .main__container .register__form .password::placeholder {
-  color: #7E7E82;
-}
-.main .main__container .register__form .Checkbox_container {
-  width: 100%;
-  max-width: 271px;
-  margin: 0 0 150px 0;
-}
-.main .main__container .register__form .Checkbox_container label {
-  color: #BCBCC0;
-  font-size: 16px;
-  font-weight: 400;
-}
-.main .main__container .fogot__password {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  margin: 19px 0 0 0;
-}
-.main .main__container .fogot__password a {
-  font-size: 18px;
-  font-weight: 400;
   color: #BCBCC0;
 }/*# sourceMappingURL=style.css.map */
